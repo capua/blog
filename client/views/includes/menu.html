@@ -1,0 +1,16 @@
+<template name="menu">
+	<div id="site-menu">
+		<ul class="nav navbar-nav">
+			{{#each categories}}
+			<li class="sub">
+				<a href="#" class="button">{{name}}</a>
+				<ul class="subnav animated">
+					{{#each companies _id}}
+						<li><a href="#" data-company-id="{{_id}}">{{name}}</a></li>
+					{{/each}}
+				</ul>
+			</li>
+			{{/each}}
+		</ul>
+	</div>
+</template>

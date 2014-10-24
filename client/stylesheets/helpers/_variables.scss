@@ -1,0 +1,15 @@
+// Media queries
+
+$bp-sm: "only screen and (min-width : 768px)";
+$bp-md: "only screen and (min-width : 992px)";
+$bp-lg: "only screen and (min-width : 1200px)";
+
+$bp-vsm: "only screen and (min-width : 0px) and (max-width : 369px)";
+$bp-4col: "only screen and (min-width : 1010px)";
+
+// font family variables:
+
+// first we set descriptive variables:
+
+$text_color: black;
+// then we set functional variables:
