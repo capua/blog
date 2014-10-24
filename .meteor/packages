@@ -6,6 +6,7 @@
 meteor-platform
 autopublish
 insecure
-juliancwirko:zf5
 iron:router
+fourseven:scss
+natestrauser:animate-css
 

@@ -11,24 +11,32 @@ body {
 
 	font-size: 15px;
 	font-weight: 300;
-	color: rgba(33,41,52,.6);
+	color: rgba(33,41,52,.8);
 	line-height: 1.6em;
 }
-// TEMPO!
-
-span, .retina{
-	float: left;
+.icon{
+	width: 40px;
 }
-.clearfix{
-	width: 300px;
-height: 80px;
-}
-span{
+.logo{
+	width: 250px;
 	position: relative;
-	top: 20px;
-	left: 10px;
-}
+	color: rgba(33,41,52,1);
+	.logo-text{
+		font-size: 36px;
+		line-height: 36px;
+		font-weight: 100;
+		position: absolute;
+		left: 60px;
+		top:50%;
+		margin-top: -((36px + 18px)/2); //toomaaaaaaa ahi, por capua!!
+		div:last-child{
+			font-size: 18px;
+			line-height: 18px;
+			position: relative;
 
+		}
+	}
+}
 a{
 	color: inherit;
 }
@@ -58,4 +66,8 @@ p{
 	-moz-animation-duration: .5s;
 	-o-animation-duration: .5s;
 	animation-duration: .5s;
+}
+
+#main-content{
+	padding-top: 50px;
 }

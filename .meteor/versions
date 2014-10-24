@@ -15,7 +15,7 @@ deps@1.0.5
 ejson@1.0.4
 fastclick@1.0.1
 follower-livedata@1.0.2
-fourseven:scss@0.9.6
+fourseven:scss@1.0.0
 geojson-utils@1.0.1
 html-tools@1.0.2
 htmljs@1.0.2
@@ -28,7 +28,6 @@ iron:layout@0.4.1
 iron:router@0.9.4
 jquery@1.0.1
 json@1.0.1
-juliancwirko:zf5@0.1.1
 livedata@1.0.11
 logging@1.0.4
 meteor-platform@1.1.2
@@ -37,6 +36,7 @@ minifiers@1.1.1
 minimongo@1.0.4
 mobile-status-bar@1.0.1
 mongo@1.0.7
+natestrauser:animate-css@3.1.2
 observe-sequence@1.0.3
 ordered-dict@1.0.1
 random@1.0.1
