@@ -3,18 +3,38 @@ html, body {
 }
 
 body {
-	font-family: 'Helvetica', sans-serif;
-	@include font-size(14, 16);
-	color: #000;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	background: #FFF;
+	font-family: "Helvetica Neue",Helvetica,sans-serif;
+	overflow-x: hidden;
+
+	font-size: 15px;
+	font-weight: 300;
+	color: rgba(33,41,52,.6);
+	line-height: 1.6em;
+}
+// TEMPO!
+
+span, .retina{
+	float: left;
+}
+.clearfix{
+	width: 300px;
+height: 80px;
+}
+span{
+	position: relative;
+	top: 20px;
+	left: 10px;
 }
 
 a{
 	color: inherit;
 }
 
-#main{
-	padding-top: 71px;
-	padding-bottom: 20px;
+p{
+	margin: 0;
 }
 #spinner {
 	height: 300px;
@@ -22,6 +42,7 @@ a{
 
 .retina img{
 	width: 100%;
+	vertical-align: middle;
 }
 
 #iron-router-progress {
@@ -31,59 +52,7 @@ a{
 #iron-router-progress.spinner:before {
     border-color : #2F39AA;
 }
-.spinner-container{
-	height: 100px;
-}
-.extra-padding{
-	padding-top: 45px;
-	@include bp(sm){
-		padding-top: 0px;
-	}
-}
-.extra-padding-profile{
-	padding-top: 90px;
-	@include bp(sm){
-		padding-top: 0px;
-	}
-}
-h1.main{
-	background-color: $text_color;
-	width: 100%;
-	color:#fff;
-	margin: 0;
-	padding: 10px;
-	font-weight: normal;
-	display: none;
-	top:50px;
-	left: 0;
-	text-align: center;
-	.shadow{
-		bottom: -6px;
-		left: 0;
-		right: 0;
-		height: 6px;
-		box-shadow: inset 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
-		position: absolute;
-		@include bp(sm){
-			display: none;
-		}
-	}
-	@include box-shadow(0, 4px, 7px, rgba(0, 0, 0, 0.075));
-	@include font-size(22, 26);
-	@include bp(sm){
-		padding-left: 65px;
-		position: static;
-		text-align: left;
-		display: block;
-	}
-}
-.header-mobile{
-	display: block !important;
-	position: absolute;
-	@include bp(sm){
-		display: none !important;
-	}
-}
+
 .fast{
 	-webkit-animation-duration: .5s;
 	-moz-animation-duration: .5s;
