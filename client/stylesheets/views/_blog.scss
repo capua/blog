@@ -1,0 +1,83 @@
+.amphitheatre{
+	margin-top: 100px;
+	.glory{
+		width: 480px;
+		border: 1px solid rgba(33,41,52,.4);
+		@include border-radius(3px);
+		overflow: hidden;
+		position: relative;
+		.pic{
+			background-color: $light-capua;
+			opacity: .5;
+			height: 150px;
+			width: 100%;
+			overflow: hidden;
+		}
+		.tags{
+			position: absolute;
+			top: 10px;
+			left: 7px;
+			width: 100%;
+			text-transform: uppercase;
+			@include font-size(6, 6);
+			font-weight: 200;
+			span{
+				background-color: white;
+				padding: 2px 6px;
+				@include border-radius(2px);
+				&.javascript{
+					background-color: $javascript-color;
+				}
+				&.css{
+					background-color: $css-color;
+				}
+			}
+		}
+		.body{
+			padding: 6px 10px 20px 10px;
+			position: relative;
+			.date{
+				@include font-size(6, 6);
+				position: absolute;
+				top: 10px;
+				left: 10px;
+			}
+			.author{
+				@include font-size(6, 6);
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				&.author-capua{
+					padding-left: 16px;
+					&:before{
+						content: '';
+						display: block;
+						background-image: url('/images/capua3.png');
+						background-repeat: no-repeat;
+						background-size: 12px;
+						width: 13px;
+						height: 20px;
+						position: absolute;
+						left: 0;
+						top: 50%;
+						margin-top: -10px;
+					}
+				}
+			}
+			h1{
+				margin: 45px 0 20px 0;
+				font-size: 28px;
+				font-weight: 300;
+				color: rgba(33,41,52,.8);
+				line-height: 20px;
+			}
+			p{
+				font-size: 15px;
+				font-weight: 300;
+				color: rgba(33,41,52,.8);
+				line-height: 1.6em;
+				margin: 10px 0;
+			}
+		}
+	}
+}
