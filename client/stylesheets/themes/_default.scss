@@ -37,7 +37,10 @@ body {
 	}
 }
 a{
-	color: inherit;
+	color: $light-capua;
+	&:hover{
+		color: $dark-capua;
+	}
 }
 
 p{

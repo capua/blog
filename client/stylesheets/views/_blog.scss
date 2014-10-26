@@ -8,10 +8,17 @@
 		position: relative;
 		.pic{
 			background-color: $light-capua;
-			opacity: .5;
+			opacity: .7;
 			height: 150px;
 			width: 100%;
 			overflow: hidden;
+			.blur{
+				-webkit-filter: blur(3px);
+				 -moz-filter: blur(3px);
+				 -o-filter: blur(3px);
+				 -ms-filter: blur(3px);
+				 filter: blur(3px);
+			}
 		}
 		.tags{
 			position: absolute;
@@ -34,25 +41,25 @@
 			}
 		}
 		.body{
-			padding: 6px 10px 20px 10px;
+			padding: 11px 15px 20px 15px;
 			position: relative;
 			.date{
-				@include font-size(6, 6);
+				@include font-size(8, 8);
 				position: absolute;
-				top: 10px;
-				left: 10px;
+				top: 15px;
+				left: 15px;
 			}
 			.author{
-				@include font-size(6, 6);
+				@include font-size(8,8);
 				position: absolute;
-				top: 10px;
-				right: 10px;
+				top: 15px;
+				right: 15px;
 				&.author-capua{
 					padding-left: 16px;
 					&:before{
 						content: '';
 						display: block;
-						background-image: url('/images/capua3.png');
+						background-image: url('/images/capua.png');
 						background-repeat: no-repeat;
 						background-size: 12px;
 						width: 13px;
@@ -77,6 +84,22 @@
 				color: rgba(33,41,52,.8);
 				line-height: 1.6em;
 				margin: 10px 0;
+			}
+			.stats{
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+			}
+			.read{
+				@include font-size(10,10);
+				font-weight: 300;
+				margin-top: 30px;
+				position: relative;
+				i{
+					@include font-size(8,8);
+					position: relative;
+					top:-1px;
+				}
 			}
 		}
 	}
