@@ -1,24 +1,27 @@
 <template name="blog">
 	<div class="amphitheatre">
 		<div class="row">
-			<article class="glory">
-				<div class="retina pic">
-					<img src="images/news/1.png">
-				</div>
-				<div class="tags">
-					<span class="javascript">javascript</span>
-					<span class="css">css</span>
-				</div>
-				<div class="body">
-					<div class="date">25. Octubre 2014</div>
-					<div class="author author-capua">ayozebarrera</div>
-					<h1>Que comiencen los juegos!</h1>
-					<p>Tras una lucha sangrienta para conseguir el nombre de usuario <i>capua</i> en GitHub, ya no tenemos excusas para compartir nuestras locuras.</p>
-					<div class="read"><a href="#">Leer <i class="fa fa-share"></i></a></div>
-					<!--p>Éstas locuras estarán relacionadas con el mundo de la programación y de la tecnología. Somos dos <del>programadores</del> gladiadores y pronto escribiremos nuestros artículos de presentación.</p>
-					<p>Por Capua!</p-->
-				</div>
-			</article>
+			{{#each articles}}
+				<article class="glory">
+					<div class="retina pic">
+						<img src="{{picture}}">
+					</div>
+					<div class="tags">
+						{{#each tags}}
+							<span class="{{getTagById this}} {{_id}}">{{getTagById this}}</span>
+						{{/each}}
+					</div>
+					<div class="body">
+						<div class="date">{{dateFormat date format="DD MMMM YYYY"}}</div>
+						<div class="author author-capua">{{author}}</div>
+						<h1>{{title}}</h1>
+						{{{description}}}
+						<div class="read"><a href="#">Leer <i class="fa fa-share"></i></a></div>
+						<!--p>Éstas locuras estarán relacionadas con el mundo de la programación y de la tecnología. Somos dos <del>programadores</del> gladiadores y pronto escribiremos nuestros artículos de presentación.</p>
+						<p>Por Capua!</p-->
+					</div>
+				</article>
+			{{/each}}
 		</div>
 	</div>
 </template>
