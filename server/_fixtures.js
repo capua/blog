@@ -11,9 +11,14 @@ var now = new Date().getTime();
 /* ========================================================================= */
 
 var tags = [
-	{ name: "html" },		// tagsId[0]
-	{ name: "css" },		// tagsId[1]
-	{ name: "javascript" }	// tagsId[2]
+	{ name: "html5" },		// tagsId[0]
+	{ name: "css3" },		// tagsId[1]
+	{ name: "javascript" },	// tagsId[2]
+	{ name: "meteor" }, // tagsId[3]
+	{ name: "mongodb" }, // tagsId[4]
+	{ name: "sass" }, // tagsId[5]
+	{ name: "terminal" }, // tagsId[6]
+	{ name: "git" } // tagsId[7]
 ];
 
 if (Tags.find().count() === 0) {
