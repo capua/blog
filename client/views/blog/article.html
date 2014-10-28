@@ -1,0 +1,62 @@
+<template name="article">
+	<div class="amphitheatre">
+		{{#each articles}}
+			<article class="full-glory">
+				<div class="row">
+					<div class="adjust">
+						<div class="tags">
+							{{#each tags}}
+								<span class="{{getTagById this}} {{_id}}">{{getTagById this}}</span>
+							{{/each}}
+						</div>
+					</div>
+				</div>
+				<div class="body">
+					<div class="row">
+						<div class="adjust clearfix">
+							<div class="date">{{dateFormat date format="DD MMMM YYYY"}}</div>
+							<div class="author author-capua">{{author}}</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="adjust">
+							<h1>{{title}}</h1>
+							<p class="pre">Capua es un blog de programación & la experiencia de usuario.</p>
+							<p>Tras una lucha sangrienta para conseguir el nombre de usuario capua en GitHub, ya no tenemos excusas para compartir nuestras locuras. Hace mucho tiempo que teníamos en mente este proyecto, pero al fin nos hemos puesto las pilas.</p>
+							<h2>Capua</h2>
+							<p>__procedencia del nombre?__</p>
+							<p>Nuestra intención es compartir artículos interesantes de las cosas que hemos ido aprendiendo, o nos han enseñado a lo largo de los diferentes proyectos que hemos realizado.</p>
+							<h2>Quienes somos</h2>
+							<p>__minifichas__</p>
+							<p>__pensar algo sobre nuestra procedencia__</p>
+						</div>
+					</div>
+					<div class="special">
+						<div class="row">
+							<div class="adjust">
+								<h2>Contenido</h2>
+								<p>Nuestros artículos se centrarán principalmente en dos campos, programación y diseño. No descartamos hablar alguna vez de tecnología.. o algún juego, quien sabe!</p>
+								<h3>Programación</h3>
+								<p>Estamos constantemente desarrollando aplicaciones utilizando y trasteando con frameworks, servicios y plataformas de última hora.</p>
+								<p>__hablar de algunos de los que usamos y enseñar algunos logos__</p>
+								<h3>Diseño</h3>
+								<p>Le damos mucha importancia a la experiencia de usuario (UX)</p>
+								<p>__maquetar algo de ux, algun ejemplo. algo breve y llamativo__</p>
+								<p>Problemente hablemos de todo un poco, pero intentando no aburrir.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="adjust">
+							<h2>Objetivos</h2>
+							<p>Somos algo novatos en el mundo de los blogs, pero intentaremos estar a la altura.</p>
+							<p>Unos de los objetivos que pretendemos conseguir con Capua es crecer como redactores. No queremos tener un blog de textos copiados, y puestos para rellenar simplemente por tener muchos artículos y visitas.</p>
+							<p>Le dedicaremos tiempo a cada artículo para intentar conseguir lo mejor de nosotros mismos. Y eso nos ayudará a conseguir otro de nuestros objetivos, la creación de nuestro propio imperio, nuestro lugar. Tenemos muchas ideas que llevamos guardando mucho tiempo.</p>
+							<p>Ya veremos hacia donde crece esto.<br>Dicho esto… El blog de Capua queda inaugurado!</p>
+						</div>
+					</div>
+				</div>
+			</article>
+		{{/each}}
+	</div>
+</template>

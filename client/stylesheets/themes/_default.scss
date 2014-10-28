@@ -21,6 +21,7 @@ body {
 	width: 250px;
 	position: relative;
 	color: rgba(33,41,52,1);
+	margin-left:13px;
 	.logo-text{
 		font-size: 36px;
 		line-height: 36px;
@@ -73,4 +74,9 @@ p{
 
 #main-content{
 	padding-top: 30px;
+}
+.adjust{
+	width: 750px;
+	padding-left: 75px;
+	position: relative;
 }

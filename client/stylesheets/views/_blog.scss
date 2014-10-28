@@ -103,4 +103,139 @@
 			}
 		}
 	}
+	.full-glory{
+		width: 100%;
+		position: relative;
+		@include bp(sm){
+			//width: 1000px;
+			//padding-left: 75px;
+		}
+		.single-wrap{
+			width: 750px;
+			padding-left: 75px;
+		}
+		.pic{
+			background-color: $light-capua;
+			opacity: .7;
+			height: 150px;
+			width: 100%;
+			overflow: hidden;
+			.blur{
+				-webkit-filter: blur(3px);
+				 -moz-filter: blur(3px);
+				 -o-filter: blur(3px);
+				 -ms-filter: blur(3px);
+				 filter: blur(3px);
+			}
+		}
+		.tags{
+			padding: 11px 0 20px 0;
+			width: 100%;
+			text-transform: uppercase;
+			@include font-size(6, 6);
+			font-weight: 200;
+			span{
+				background-color: white;
+				padding: 2px 6px;
+				@include border-radius(2px);
+				&.javascript{
+					background-color: $javascript-color;
+				}
+				&.css{
+					background-color: $css-color;
+				}
+			}
+		}
+		.body{
+			padding: 11px 0 20px 0;
+			position: relative;
+			.date{
+				@include font-size(8, 8);
+				float: left;
+			}
+			.author{
+				@include font-size(8,8);
+				float: right;
+				position: relative;
+				&.author-capua{
+					padding-left: 16px;
+					&:before{
+						content: '';
+						display: block;
+						background-image: url('/images/capua.png');
+						background-repeat: no-repeat;
+						background-size: 12px;
+						width: 13px;
+						height: 20px;
+						position: absolute;
+						left: 0;
+						top: 50%;
+						margin-top: -10px;
+					}
+				}
+			}
+			h1{
+				margin: 45px 0 20px 0;
+				font-size: 38px;
+				font-weight: 300;
+				color: rgba(33,41,52,1);
+				line-height: 38px;
+			}
+			h2{
+				font-weight: 300;
+				font-size: 30px;
+				margin: 40px 0 20px;
+				color: rgba(33,41,52,.8);
+			}
+			h3{
+				font-weight: 200;
+				font-size: 24px;
+				margin: 30px 0 20px;
+				color: rgba(33,41,52,.8);
+			}
+			p{
+				font-size: 15px;
+				font-weight: 300;
+				color: rgba(33,41,52,.8);
+				line-height: 1.6em;
+				margin: 10px 0;
+				&.pre{
+					margin-bottom: 40px;
+				}
+			}
+			.stats{
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+			}
+			.read{
+				@include font-size(10,10);
+				font-weight: 300;
+				margin-top: 30px;
+				position: relative;
+				i{
+					@include font-size(8,8);
+					position: relative;
+					top:-1px;
+				}
+			}
+			.special{
+				background-color: #B28840; //o light-capua
+				padding: 20px 0 50px;
+				margin: 50px 0 30px 0;
+				h1{
+					color: rgba(244, 244, 244, 1);
+				}
+				h2{
+					color: rgba(244, 244, 244, 1);
+				}
+				h3{
+					color: rgba(244, 244, 244, .8);
+				}
+				p{
+					color: rgba(244, 244, 244, .8);
+				}
+			}
+		}
+	}
 }
