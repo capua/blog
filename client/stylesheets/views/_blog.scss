@@ -188,19 +188,25 @@
 				color: rgba(33,41,52,.8);
 			}
 			h3{
-				font-weight: 200;
-				font-size: 24px;
+				font-weight: 400;
+				font-size: 20px;
 				margin: 30px 0 20px;
 				color: rgba(33,41,52,.8);
 			}
 			p{
 				font-size: 15px;
 				font-weight: 300;
-				color: rgba(33,41,52,.8);
+				color: rgba(0,0,0,.8);
 				line-height: 1.6em;
 				margin: 10px 0;
 				&.pre{
-					margin-bottom: 40px;
+					margin-bottom: 60px;
+					color: rgba(30,40,50,.6);
+					font-size: 18px;
+				}
+				&.sub{
+					color: rgba(30,40,50,.6);
+					margin: 40px auto;
 				}
 			}
 			.stats{
