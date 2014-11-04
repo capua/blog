@@ -48,6 +48,7 @@ reload@1.1.1
 retry@1.0.1
 routepolicy@1.0.2
 session@1.0.4
+simple:highlight.js@1.0.9
 spacebars-compiler@1.0.3
 spacebars@1.0.3
 synka:moment-with-locales@2.8.3
