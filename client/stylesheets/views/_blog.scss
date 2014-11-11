@@ -256,3 +256,46 @@
 
 	}
 }
+.services-wrapper{
+	margin: 40px 0;
+	height: 70px;
+	.service{
+		width: 40px;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 10px;
+		height: 100%;
+		@include font-size(6,6);
+
+		/*&:after{
+			display: block;
+			margin-top: 5px;
+		}
+		&.s-bower{
+			&:after{
+				content:'bower';
+			}
+		}
+		&.s-coffescript{
+			&:after{
+				content:'coffescript';
+			}
+		}
+		&.s-d3{
+			&:after{
+				content:'d3';
+			}
+		}
+		&.s-github{
+			&:after{
+				content:'github';
+			}
+		}
+		&.s-grunt{
+			&:after{
+				content:'grunt';
+			}
+		}*/
+	}
+}
