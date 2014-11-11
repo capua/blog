@@ -264,11 +264,15 @@
 		text-align: center;
 		display: inline-block;
 		vertical-align: middle;
-		margin: 0 10px;
+		margin: 0 15px;
 		height: 100%;
 		@include font-size(6,6);
-
-		/*&:after{
+		.v-align{
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+		&:after{
 			display: block;
 			margin-top: 5px;
 		}
@@ -296,6 +300,6 @@
 			&:after{
 				content:'grunt';
 			}
-		}*/
+		}
 	}
 }
