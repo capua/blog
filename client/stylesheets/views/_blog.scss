@@ -258,62 +258,47 @@
 }
 .services-wrapper{
 	margin: 40px 0;
-	height: 70px;
-	.service{
-		width: 40px;
-		text-align: center;
+	.service-wrapper{
 		display: inline-block;
-		vertical-align: middle;
-		margin: 0 15px;
-		@include font-size(6,6);
-		.v-align{
-			display: inline-block;
-			height: 100%;
+		height: auto;
+		text-align: center;
+		position: relative;
+		.service{
+			width: 40px;
+			text-align: center;
 			vertical-align: middle;
+			margin: 0 15px;
+			@include font-size(6,6);
+			.v-align{
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+			}
+			&.s-bower{
+
+			}
+			&.s-coffescript{
+
+			}
+			&.s-d3{
+
+			}
+			&.s-github{
+
+			}
+			&.s-grunt{
+
+			}
+			&.s-gulp{
+			}
+			&.s-handlebars{
+			}
+			&.s-jasmine{
+			}
 		}
-		&:after{
-			display: block;
+		div:last-child{
+			@include font-size(6,6);
 			margin-top: 5px;
-		}
-		&.s-bower{
-			&:after{
-				content:'bower';
-			}
-		}
-		&.s-coffescript{
-			&:after{
-				content:'coffescript';
-			}
-		}
-		&.s-d3{
-			&:after{
-				content:'d3';
-			}
-		}
-		&.s-github{
-			&:after{
-				content:'github';
-			}
-		}
-		&.s-grunt{
-			&:after{
-				content:'grunt';
-			}
-		}
-		&.s-gulp{
-			&:after{
-				content:'gulp';
-			}
-		}
-		&.s-handlebars{
-			&:after{
-				content:'handlebars';
-			}
-		}
-		&.s-jasmine{
-			&:after{
-				content:'jasmine';
-			}
 		}
 	}
 }
