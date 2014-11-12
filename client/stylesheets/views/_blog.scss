@@ -265,7 +265,6 @@
 		display: inline-block;
 		vertical-align: middle;
 		margin: 0 15px;
-		height: 100%;
 		@include font-size(6,6);
 		.v-align{
 			display: inline-block;
@@ -299,6 +298,21 @@
 		&.s-grunt{
 			&:after{
 				content:'grunt';
+			}
+		}
+		&.s-gulp{
+			&:after{
+				content:'gulp';
+			}
+		}
+		&.s-handlebars{
+			&:after{
+				content:'handlebars';
+			}
+		}
+		&.s-jasmine{
+			&:after{
+				content:'jasmine';
 			}
 		}
 	}
