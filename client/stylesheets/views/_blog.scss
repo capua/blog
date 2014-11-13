@@ -312,3 +312,32 @@
 		}
 	}
 }
+.techs-wrapper{
+	margin: 40px 0;
+	.tech-wrapper{
+		display: inline-block;
+		height: auto;
+		text-align: center;
+		position: relative;
+		margin-bottom: 20px;
+		.tech{
+			width: 60px;
+			text-align: center;
+			vertical-align: middle;
+			margin: 0 80px;
+			@include font-size(6,6);
+			.v-align{
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+			}
+		}
+		.t-foundation, .t-css3{
+			width: 50px;
+		}
+		div:last-child{
+			@include font-size(8,8);
+			margin-top: 20px;
+		}
+	}
+}
