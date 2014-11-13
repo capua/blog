@@ -275,9 +275,40 @@
 				vertical-align: middle;
 			}
 		}
+		.s-gulp, .s-mongodb{
+			width: 30px;
+		}
 		div:last-child{
 			@include font-size(6,6);
 			margin-top: 5px;
+		}
+	}
+}
+.platforms-wrapper{
+	margin: 40px 0;
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+	.platform-wrapper{
+		//display: inline-block;
+		height: auto;
+		text-align: center;
+		position: relative;
+		.platform{
+			width: 100px;
+			margin: 0 auto;
+			text-align: center;
+			vertical-align: middle;
+			@include font-size(6,6);
+			.v-align{
+				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+			}
+		}
+		div:last-child{
+			@include font-size(10,10);
+			margin-top: 25px;
 		}
 	}
 }
