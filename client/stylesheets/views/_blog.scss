@@ -320,11 +320,12 @@
 		text-align: center;
 		position: relative;
 		margin-bottom: 20px;
+		width: 220px;
 		.tech{
 			width: 60px;
 			text-align: center;
 			vertical-align: middle;
-			margin: 0 80px;
+			margin: 0 auto;
 			@include font-size(6,6);
 			.v-align{
 				display: inline-block;
