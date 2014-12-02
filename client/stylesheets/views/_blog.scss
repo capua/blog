@@ -2,16 +2,40 @@
 	margin-top: 100px;
 	.glory{
 		width: 480px;
-		border: 1px solid rgba(33,41,52,.4);
+	  	position:relative;
 		@include border-radius(3px);
-		overflow: hidden;
-		position: relative;
+		//overflow: hidden;
+		box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+		&:before, &:after {
+			border-radius: 100px 100px 100px 100px / 10px 10px 10px 10px;
+			bottom: 0;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+			content: "";
+			left: 10px;
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			z-index: -1;
+		}
+		&:after {
+			left: auto;
+			right: 10px;
+			-webkit-transform: skew(8deg) rotate(3deg);
+			-moz-transform: skew(8deg) rotate(3deg);
+			-ms-transform: skew(8deg) rotate(3deg);
+			-o-transform: skew(8deg) rotate(3deg);
+			transform: skew(8deg) rotate(3deg);
+		}
 		.pic{
-			background-color: $light-capua;
-			opacity: .7;
+			//background-color: $light-capua;
+			//opacity: .7;
 			height: 150px;
 			width: 100%;
-			overflow: hidden;
+			//overflow: hidden;
+			img{
+				border-top-left-radius: 3px;
+				border-top-right-radius: 3px;
+			}
 			.blur{
 				-webkit-filter: blur(3px);
 				 -moz-filter: blur(3px);
@@ -43,6 +67,7 @@
 		.body{
 			padding: 11px 15px 20px 15px;
 			position: relative;
+			background-color: #fafafa;
 			.date{
 				@include font-size(8, 8);
 				position: absolute;
