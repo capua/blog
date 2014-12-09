@@ -35,8 +35,11 @@
 				&.javascript{
 					background-color: $javascript-color;
 				}
-				&.css{
+				&.css3{
 					background-color: $css-color;
+				}
+				&.editor {
+					background-color: $editor-color;
 				}
 			}
 		}
@@ -141,8 +144,11 @@
 				&.javascript{
 					background-color: $javascript-color;
 				}
-				&.css{
+				&.css3{
 					background-color: $css-color;
+				}
+				&.editor {
+					background-color: $editor-color;
 				}
 			}
 		}

@@ -14,11 +14,12 @@ var tags = [
 	{ name: "html5" },		// tagsId[0]
 	{ name: "css3" },		// tagsId[1]
 	{ name: "javascript" },	// tagsId[2]
-	{ name: "meteor" }, // tagsId[3]
-	{ name: "mongodb" }, // tagsId[4]
-	{ name: "sass" }, // tagsId[5]
-	{ name: "terminal" }, // tagsId[6]
-	{ name: "git" } // tagsId[7]
+	{ name: "meteor" }, 	// tagsId[3]
+	{ name: "mongodb" }, 	// tagsId[4]
+	{ name: "sass" }, 		// tagsId[5]
+	{ name: "terminal" }, 	// tagsId[6]
+	{ name: "git" }, 		// tagsId[7]
+	{ name: "editor" }		// tagsId[8]
 ];
 
 if (Tags.find().count() === 0) {
@@ -41,6 +42,16 @@ var articles = [
 		date: now,
 		author: "ayozebarrera",
 		tags: [ tagsId[1], tagsId[2] ]
+	},
+	{
+		newArticle: true,
+		title: "Sublime Text 3",
+		picture: "/images/news/1.png",
+		description: "<p>Como buenos gladiadores además de estar bien preparados es importante familiarizarnos con nuestras armas. Cuanto mas cómodos y adaptados estemos a nuestro entorno de batalla mayor será nuestro poder. Una de las herramientas mas importantes para un programador es su editor de texto/IDE.</p>",
+		content: "...",
+		date: now,
+		author: "marioblas",
+		tags: [ tagsId[8] ]
 	}
 ];
 

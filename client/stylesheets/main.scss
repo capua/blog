@@ -4,7 +4,7 @@
 @import "helpers/placeholders";
 
 // Vendors and external stylesheets
-
+@import "vendor/highlightjs";
 
 // Base stuff
 @import "base/typography";
@@ -20,9 +20,11 @@
 @import "components/forms";
 @import "components/navigation";
 @import "components/containers";
+@import "components/code";
 
 // Page-specific stylesheets
 @import "views/blog";
 
 // Themes
 @import "themes/default";
+@import "themes/highlightjs-theme";

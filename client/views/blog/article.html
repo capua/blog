@@ -1,268 +1,266 @@
 <template name="article">
 	<div class="amphitheatre">
-		{{#each articles}}
-			<article class="full-glory">
+		<article class="full-glory">
+			<div class="row">
+				<div class="adjust">
+					<div class="tags">
+						{{#each tags}}
+							<span class="{{getTagById this}} {{_id}}">{{getTagById this}}</span>
+						{{/each}}
+					</div>
+				</div>
+			</div>
+			<div class="body">
+				<div class="row">
+					<div class="adjust clearfix">
+						<div class="date">{{dateFormat date format="DD MMMM YYYY"}}</div>
+						<div class="author author-capua">{{author}}</div>
+					</div>
+				</div>
 				<div class="row">
 					<div class="adjust">
-						<div class="tags">
-							{{#each tags}}
-								<span class="{{getTagById this}} {{_id}}">{{getTagById this}}</span>
-							{{/each}}
+						<h1>{{title}}</h1>
+						<p class="pre">Capua es un blog de programación & experiencia de usuario.</p>
+						<p class="sub">Tras una lucha sangrienta para conseguir el nombre de usuario capua en GitHub, ya no tenemos excusas para compartir nuestras locuras. Hace mucho tiempo que teníamos en mente este proyecto, pero al fin nos hemos puesto las pilas.</p>
+						<h2>Capua</h2>
+						<p>Por contar un poco de donde procede el nombre del blog, nos gusta la temática romana, y Capua, antigua capital de Campania, tuvo el primer anfiteatro del mundo romano, donde los gladiadores dominaban la arena.</p>
+						<p>Los desarrolladores, desde siempre, tienen que reciclarse <strong>díariamente</strong> pues cada día salen nuevas tecnologías u otras se van actualizando, y para conseguir eso creemos que debemos ser como los gladiadores de la antigua Roma, capaces de enfrentarnos a cualquier bestia que se nos ponga por delante.</p>
+						<p>__imagen de un gladiador/programador VS una app/code/monstruo formado con code (molaría fleje)__ </p>
+						<p>Si has visto o si eres fan de <i>spartacus</i>, es posible que te suene todo esto de Capua. También te será familiar nuestro grito de guerra... Por Capua!</p>
+						<p>Nuestra intención es compartir artículos interesantes de las cosas que hemos ido aprendiendo, o nos han enseñado a lo largo de los diferentes proyectos que hemos realizado.</p>
+						<h2>Quienes somos</h2>
+						<div class="mini-info clearfix">
+							<div class="gladiator">
+								<div class="retina picture">
+									<img src="/images/authors/ayo.jpg">
+								</div>
+								<div class="retina front">
+									<img src="/images/front-capua.png">
+								</div>
+								<div class="name">ayoze barrera</div>
+								<div class="bio">Responsable de desarrollo de aplicaciones<br><br>No todo es código, le doy mucha importancia al diseño de UI y UX. Fundar Capua es el comienzo de varios proyectos que tengo en mente. <br><br><i class="fa fa-heart"></i> technology, patriots, heisenberg, arctic monkeys <i class="fa fa-heart"></i></div>
+							</div>
+							<div class="gladiator">
+								<div class="retina picture">
+									<img src="/images/authors/mario.jpg">
+								</div>
+								<div class="retina front">
+									<img src="/images/front-capua.png">
+								</div>
+								<div class="name">mario gil</div>
+								<div class="bio">Desarrollador de aplicaciones web<br><br>Obsesivo del orden, apasionado por el buen código y amante de la prosa entre barras y asteriscos. Además del lugar donde compartir lo que aprendo, Capua es el inicio de algo grande. <br><br><i class="fa fa-heart"></i> technology, football, travel, game of thrones <i class="fa fa-heart"></i></div>
+							</div>
+						</div>
+						<div class="world-map-wrapper retina">
+							<img src="/images/articles/world2.svg">
 						</div>
 					</div>
 				</div>
-				<div class="body">
-					<div class="row">
-						<div class="adjust clearfix">
-							<div class="date">{{dateFormat date format="DD MMMM YYYY"}}</div>
-							<div class="author author-capua">{{author}}</div>
-						</div>
-					</div>
+				<div class="special">
 					<div class="row">
 						<div class="adjust">
-							<h1>{{title}}</h1>
-							<p class="pre">Capua es un blog de programación & experiencia de usuario.</p>
-							<p class="sub">Tras una lucha sangrienta para conseguir el nombre de usuario capua en GitHub, ya no tenemos excusas para compartir nuestras locuras. Hace mucho tiempo que teníamos en mente este proyecto, pero al fin nos hemos puesto las pilas.</p>
-							<h2>Capua</h2>
-							<p>Por contar un poco de donde procede el nombre del blog, nos gusta la temática romana, y Capua, antigua capital de Campania, tuvo el primer anfiteatro del mundo romano, donde los gladiadores dominaban la arena.</p>
-							<p>Los desarrolladores, desde siempre, tienen que reciclarse <strong>díariamente</strong> pues cada día salen nuevas tecnologías u otras se van actualizando, y para conseguir eso creemos que debemos ser como los gladiadores de la antigua Roma, capaces de enfrentarnos a cualquier bestia que se nos ponga por delante.</p>
-							<p>__imagen de un gladiador/programador VS una app/code/monstruo formado con code (molaría fleje)__ </p>
-							<p>Si has visto o si eres fan de <i>spartacus</i>, es posible que te suene todo esto de Capua. También te será familiar nuestro grito de guerra... Por Capua!</p>
-							<p>Nuestra intención es compartir artículos interesantes de las cosas que hemos ido aprendiendo, o nos han enseñado a lo largo de los diferentes proyectos que hemos realizado.</p>
-							<h2>Quienes somos</h2>
-							<div class="mini-info clearfix">
-								<div class="gladiator">
-									<div class="retina picture">
-										<img src="/images/authors/ayo.jpg">
+							<h2>Contenido</h2>
+							<p>Nuestros artículos se centrarán principalmente en dos campos, programación y diseño. No descartamos hablar alguna vez de tecnología... o algún juego, quien sabe!</p>
+							<h3>Programación</h3>
+							<p>__imagenes de programacion__</p>
+							<p>Estamos constantemente desarrollando aplicaciones con frameworks, servicios y plataformas de última hora.</p>
+							<p>Nuestro mundo gira principalmente en torno a Javascript y todas las tecnologías relacionadas con éste lenguaje.</p>
+							<p>
+								<div class="services-wrapper">
+									<div class="service-wrapper">
+										<div class="retina service s-bower">
+											<img src="/images/services/bower.svg">
+										</div>
+										<div>bower</div>
 									</div>
-									<div class="retina front">
-										<img src="/images/front-capua.png">
+									<div class="service-wrapper">
+										<div class="retina service s-coffescript">
+											<img src="/images/services/coffescript.svg">
+										</div>
+										<div>coffescript</div>
 									</div>
-									<div class="name">ayoze barrera</div>
-									<div class="bio">Responsable de desarrollo de aplicaciones<br><br>No todo es código, le doy mucha importancia al diseño de UI y UX. Fundar Capua es el comienzo de varios proyectos que tengo en mente. <br><br><i class="fa fa-heart"></i> technology, patriots, heisenberg, arctic monkeys <i class="fa fa-heart"></i></div>
+									<div class="service-wrapper">
+										<div class="retina service s-d3">
+											<img src="/images/services/d3.svg">
+										</div>
+										<div>d3</div>
+									</div>
+									<div class="service-wrapper">
+										<div class="retina service s-github">
+											<img src="/images/services/github.svg">
+										</div>
+										<div>github</div>
+									</div>
+									<div class="service-wrapper">
+										<div class="retina service s-grunt">
+											<img src="/images/services/grunt.svg">
+										</div>
+										<div>grunt</div>
+									</div>
+									<div class="service-wrapper">
+										<div class="retina service s-gulp">
+											<img src="/images/services/gulp.svg">
+										</div>
+										<div>gulp</div>
+									</div>
+									<div class="service-wrapper">
+										<div class="retina service s-handlebars">
+											<img src="/images/services/handlebars.svg">
+										</div>
+										<div>handlebars</div>
+									</div>
+									<div class="service-wrapper">
+										<div class="retina service s-jasmine">
+											<img src="/images/services/jasmine.svg">
+										</div>
+										<div>jasmine</div>
+									</div>
+									<div class="service-wrapper">
+										<div class="retina service s-jquery">
+											<img src="/images/services/jquery.svg">
+										</div>
+										<div>jquery</div>
+									</div>
+									<div class="service-wrapper">
+										<div class="retina service s-karma">
+											<img src="/images/services/karma.svg">
+										</div>
+										<div>karma</div>
+									</div>
+									<div class="service-wrapper">
+										<div class="retina service s-lo">
+											<img src="/images/services/lo.svg">
+										</div>
+										<div>lo-dash</div>
+									</div>
+									<div class="service-wrapper">
+										<div class="retina service s-moment">
+											<img src="/images/services/moment.svg">
+										</div>
+										<div>moment</div>
+									</div>
+									<div class="service-wrapper">
+										<div class="retina service s-mongodb">
+											<img src="/images/services/mongodb.svg">
+										</div>
+										<div>mongodb</div>
+									</div>
+									<div class="service-wrapper">
+										<div class="retina service s-react">
+											<img src="/images/services/react.svg">
+										</div>
+										<div>react</div>
+									</div>
+									<div class="service-wrapper">
+										<div class="retina service s-require">
+											<img src="/images/services/require.svg">
+										</div>
+										<div>require</div>
+									</div>
+									<div class="service-wrapper">
+										<div class="retina service s-socket">
+											<img src="/images/services/socket.svg">
+										</div>
+										<div>socket</div>
+									</div>
+									<div class="service-wrapper">
+										<div class="retina service s-yo">
+											<img src="/images/services/yo.svg">
+										</div>
+										<div>yo</div>
+									</div>
+									<div class="service-wrapper">
+										<div class="retina service s-snap">
+											<img src="/images/services/snap.svg">
+										</div>
+										<div>snap</div>
+									</div>
 								</div>
-								<div class="gladiator">
-									<div class="retina picture">
-										<img src="/images/authors/mario.jpg">
+							</p>
+							<p>Actualmente estamos desarrollando con Meteor. Se trata de una plataforma para desarrollar aplicaciones web en tiempo real, está construida sobre Node.js y utiliza como base de datos MongoDB.</p>
+							<p>Por otro lado no solo nos dedicaremos a hablar de esta plataforma. Estamos constantemente probando otras que vamos descubriendo.</p>
+							<p>
+								<div class="platforms-wrapper">
+									<div class="platform-wrapper">
+										<div class="retina platform p-meteor">
+											<img src="/images/platforms/meteor.svg">
+										</div>
+										<div>meteor</div>
 									</div>
-									<div class="retina front">
-										<img src="/images/front-capua.png">
+									<div class="platform-wrapper">
+										<div class="retina platform p-node">
+											<img src="/images/platforms/node.svg">
+										</div>
+										<div>node</div>
 									</div>
-									<div class="name">mario gil</div>
-									<div class="bio">Desarrollador de aplicaciones web<br><br>Obsesivo del orden, apasionado por el buen código y amante de la prosa entre barras y asteriscos. Además del lugar donde compartir lo que aprendo, Capua es el inicio de algo grande. <br><br><i class="fa fa-heart"></i> technology, football, travel, game of thrones <i class="fa fa-heart"></i></div>
+									<div class="platform-wrapper">
+										<div class="retina platform p-angular">
+											<img src="/images/platforms/angular.svg">
+										</div>
+										<div>angular</div>
+									</div>
 								</div>
+							</p>
+							<h3>Diseño</h3>
+							<p>Le damos mucha importancia al diseño de la experiencia de usuario (UX). UX es la calidad de experiencia que tiene un usuario cuando usa un diseño concreto. </p>
+							<div class="retina ux-pic">
+								<img src="/images/articles/ux.png">
 							</div>
-							<div class="world-map-wrapper retina">
-								<img src="/images/articles/world2.svg">
-							</div>
-						</div>
-					</div>
-					<div class="special">
-						<div class="row">
-							<div class="adjust">
-								<h2>Contenido</h2>
-								<p>Nuestros artículos se centrarán principalmente en dos campos, programación y diseño. No descartamos hablar alguna vez de tecnología... o algún juego, quien sabe!</p>
-								<h3>Programación</h3>
-								<p>__imagenes de programacion__</p>
-								<p>Estamos constantemente desarrollando aplicaciones con frameworks, servicios y plataformas de última hora.</p>
-								<p>Nuestro mundo gira principalmente en torno a Javascript y todas las tecnologías relacionadas con éste lenguaje.</p>
-								<p>
-									<div class="services-wrapper">
-										<div class="service-wrapper">
-											<div class="retina service s-bower">
-												<img src="/images/services/bower.svg">
-											</div>
-											<div>bower</div>
+							<p>Algunas tecnologías de las que usamos nos permiten tener mayor flexibilidad en nuestra aplicación para así conseguir una UX más elaborada...</p>
+							<p>
+								<div class="techs-wrapper">
+									<div class="tech-wrapper">
+										<div class="retina tech t-ionic">
+											<img src="/images/techs/ionic.svg">
 										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-coffescript">
-												<img src="/images/services/coffescript.svg">
-											</div>
-											<div>coffescript</div>
-										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-d3">
-												<img src="/images/services/d3.svg">
-											</div>
-											<div>d3</div>
-										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-github">
-												<img src="/images/services/github.svg">
-											</div>
-											<div>github</div>
-										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-grunt">
-												<img src="/images/services/grunt.svg">
-											</div>
-											<div>grunt</div>
-										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-gulp">
-												<img src="/images/services/gulp.svg">
-											</div>
-											<div>gulp</div>
-										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-handlebars">
-												<img src="/images/services/handlebars.svg">
-											</div>
-											<div>handlebars</div>
-										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-jasmine">
-												<img src="/images/services/jasmine.svg">
-											</div>
-											<div>jasmine</div>
-										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-jquery">
-												<img src="/images/services/jquery.svg">
-											</div>
-											<div>jquery</div>
-										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-karma">
-												<img src="/images/services/karma.svg">
-											</div>
-											<div>karma</div>
-										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-lo">
-												<img src="/images/services/lo.svg">
-											</div>
-											<div>lo-dash</div>
-										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-moment">
-												<img src="/images/services/moment.svg">
-											</div>
-											<div>moment</div>
-										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-mongodb">
-												<img src="/images/services/mongodb.svg">
-											</div>
-											<div>mongodb</div>
-										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-react">
-												<img src="/images/services/react.svg">
-											</div>
-											<div>react</div>
-										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-require">
-												<img src="/images/services/require.svg">
-											</div>
-											<div>require</div>
-										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-socket">
-												<img src="/images/services/socket.svg">
-											</div>
-											<div>socket</div>
-										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-yo">
-												<img src="/images/services/yo.svg">
-											</div>
-											<div>yo</div>
-										</div>
-										<div class="service-wrapper">
-											<div class="retina service s-snap">
-												<img src="/images/services/snap.svg">
-											</div>
-											<div>snap</div>
-										</div>
+										<div>ionic</div>
 									</div>
-								</p>
-								<p>Actualmente estamos desarrollando con Meteor. Se trata de una plataforma para desarrollar aplicaciones web en tiempo real, está construida sobre Node.js y utiliza como base de datos MongoDB.</p>
-								<p>Por otro lado no solo nos dedicaremos a hablar de esta plataforma. Estamos constantemente probando otras que vamos descubriendo.</p>
-								<p>
-									<div class="platforms-wrapper">
-										<div class="platform-wrapper">
-											<div class="retina platform p-meteor">
-												<img src="/images/platforms/meteor.svg">
-											</div>
-											<div>meteor</div>
+									<div class="tech-wrapper">
+										<div class="retina tech t-sass">
+											<img src="/images/techs/sass.svg">
 										</div>
-										<div class="platform-wrapper">
-											<div class="retina platform p-node">
-												<img src="/images/platforms/node.svg">
-											</div>
-											<div>node</div>
-										</div>
-										<div class="platform-wrapper">
-											<div class="retina platform p-angular">
-												<img src="/images/platforms/angular.svg">
-											</div>
-											<div>angular</div>
-										</div>
+										<div>sass</div>
 									</div>
-								</p>
-								<h3>Diseño</h3>
-								<p>Le damos mucha importancia al diseño de la experiencia de usuario (UX). UX es la calidad de experiencia que tiene un usuario cuando usa un diseño concreto. </p>
-								<div class="retina ux-pic">
-									<img src="/images/articles/ux.png">
+									<div class="tech-wrapper">
+										<div class="retina tech t-foundation">
+											<img src="/images/techs/foundation.svg">
+										</div>
+										<div>foundation</div>
+									</div>
+									<div class="tech-wrapper">
+										<div class="retina tech t-css3">
+											<img src="/images/techs/css3.svg">
+										</div>
+										<div>css3</div>
+									</div>
+									<div class="tech-wrapper">
+										<div class="retina tech t-bootstrap">
+											<img src="/images/techs/bootstrap.svg">
+										</div>
+										<div>bootstrap</div>
+									</div>
+									<div class="tech-wrapper">
+										<div class="retina tech t-modernizr">
+											<img src="/images/techs/modernizr.svg">
+										</div>
+										<div>modernizr</div>
+									</div>
 								</div>
-								<p>Algunas tecnologías de las que usamos nos permiten tener mayor flexibilidad en nuestra aplicación para así conseguir una UX más elaborada...</p>
-								<p>
-									<div class="techs-wrapper">
-										<div class="tech-wrapper">
-											<div class="retina tech t-ionic">
-												<img src="/images/techs/ionic.svg">
-											</div>
-											<div>ionic</div>
-										</div>
-										<div class="tech-wrapper">
-											<div class="retina tech t-sass">
-												<img src="/images/techs/sass.svg">
-											</div>
-											<div>sass</div>
-										</div>
-										<div class="tech-wrapper">
-											<div class="retina tech t-foundation">
-												<img src="/images/techs/foundation.svg">
-											</div>
-											<div>foundation</div>
-										</div>
-										<div class="tech-wrapper">
-											<div class="retina tech t-css3">
-												<img src="/images/techs/css3.svg">
-											</div>
-											<div>css3</div>
-										</div>
-										<div class="tech-wrapper">
-											<div class="retina tech t-bootstrap">
-												<img src="/images/techs/bootstrap.svg">
-											</div>
-											<div>bootstrap</div>
-										</div>
-										<div class="tech-wrapper">
-											<div class="retina tech t-modernizr">
-												<img src="/images/techs/modernizr.svg">
-											</div>
-											<div>modernizr</div>
-										</div>
-									</div>
-								</p>
-								<p>Problemente hablemos de todo un poco, pero intentando no aburrir.</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="adjust">
-							<h2>Objetivos</h2>
-							<p>Somos algo novatos en el mundo de los blogs, pero intentaremos estar a la altura.</p>
-							<p>Unos de los objetivos que pretendemos conseguir con Capua es crecer como redactores. No queremos tener un blog de textos copiados, y puestos para rellenar simplemente por tener muchos artículos y visitas.</p>
-							<p>Le dedicaremos tiempo a cada artículo para intentar conseguir lo mejor de nosotros mismos. Y eso nos ayudará a conseguir otro de nuestros objetivos, la creación de nuestro propio imperio, nuestro lugar. Tenemos muchas ideas que llevamos guardando mucho tiempo.</p>
-							<p>Ya veremos hacia donde crece esto.<br>Dicho esto… El blog de Capua queda inaugurado!</p>
+							</p>
+							<p>Problemente hablemos de todo un poco, pero intentando no aburrir.</p>
 						</div>
 					</div>
 				</div>
-			</article>
-		{{/each}}
+				<div class="row">
+					<div class="adjust">
+						<h2>Objetivos</h2>
+						<p>Somos algo novatos en el mundo de los blogs, pero intentaremos estar a la altura.</p>
+						<p>Unos de los objetivos que pretendemos conseguir con Capua es crecer como redactores. No queremos tener un blog de textos copiados, y puestos para rellenar simplemente por tener muchos artículos y visitas.</p>
+						<p>Le dedicaremos tiempo a cada artículo para intentar conseguir lo mejor de nosotros mismos. Y eso nos ayudará a conseguir otro de nuestros objetivos, la creación de nuestro propio imperio, nuestro lugar. Tenemos muchas ideas que llevamos guardando mucho tiempo.</p>
+						<p>Ya veremos hacia donde crece esto.<br>Dicho esto… El blog de Capua queda inaugurado!</p>
+					</div>
+				</div>
+			</div>
+		</article>
 	</div>
 </template>

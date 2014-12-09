@@ -1,0 +1,113 @@
+<template name="newArticle">
+	<div class="amphitheatre">
+		<article class="full-glory">
+			<div class="row">
+				<div class="adjust">
+					<div class="tags">
+						{{#each tags}}
+							<span class="{{getTagById this}} {{_id}}">{{getTagById this}}</span>
+						{{/each}}
+					</div>
+				</div>
+			</div>
+			<div class="body">
+				<div class="row">
+					<div class="adjust clearfix">
+						<div class="date">{{dateFormat date format="DD MMMM YYYY"}}</div>
+						<div class="author author-capua">{{author}}</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="adjust">
+						<h1>{{title}}</h1>
+						<p class="sub">Como buenos gladiadores además de estar bien preparados es importante familiarizarnos con nuestras armas. Cuanto mas cómodos y adaptados estemos a nuestro entorno de batalla mayor será nuestro poder. Una de las herramientas mas importantes para un programador es su editor de texto/IDE.</p>
+						<p>Personalmente somos de los que prefieren editor de texto por su simplicidad, ligereza... no necesitamos mas.</p>
+						<p>__coda, brackets, atom, light table__</p>
+						<p><a href="http://www.sublimetext.com/">Sublime Text</a>, en su versión 3, a pesar de estar en beta es bastante estable y funciona realmente bien. Al abrirlo por primera vez notas que viene casi "pelado" y es uno de sus puntos fuertes, la capacidad de personalización, se puede personalizar practicamente todo.</p>
+						<p>__foto sublime limpio__</p>
+						<p>Al personalizarlo a nuestras necesidades veremos que no tiene nada que envidiarle a ningún IDE</p>
+						<p>Algunos de sus puntos fuertes son:</p>
+						<ul>
+							<li>Ligereza...</li>
+							<li>Movernos sobre ficheros, buscar en los mismos, ir a una función o linea determinada... y todo muy rápido, una delicia sobre todo para proyectos con una gran cantidad de ficheros...</li>
+							<li>Selecciones y cursores múltiples...</li>
+							<li>Cambiar de proyecto instantaneamente...</li>
+							<li>Paleta de comandos...</li>
+							<li>Capacidad de personalización...</li>
+						</ul>
+						<p>__gifs/imagenes o citar la web de sublime__</p>
+						<p>__Nombrar funciones citadas / paleta de comandos (cmd+shift+p) / (cmd+p)... ir a una linea... múltiples cursores... cambiar de proyecto...__</p>
+
+						<p>A continuación os voy a hablar un poco sobr mi configuración:</p>
+
+						<h2>Packages</h2>
+						<p>Una vez instalado una de las primeras cosas que debemos hacer es instalar Package Control siguiendo los <a href="https://sublime.wbond.net/installation">pasos</a> de la web.</p>
+						<p>Para instalar un paquete tenemos que abrir la paleta de comandos <code>⌘+⇧+P</code> <i class="fa fa-apple"></i> ó <code>⌃+⇧+P</code> <i class="fa fa-linux"></i> <i class="fa fa-windows"></i> , escribir <code>Install Package + ↩</code> y buscar por el nombre del paquete.</p>
+						<p>También en la web de <a href="https://sublime.wbond.net/">Package Control</a> podeís ver los paquetes con mucha información así como los mas populares, nuevos, tendencias y mas</p>
+
+						<h3>Emmet</h3>
+						<p>Para mejorar el workflow cuando trabajamos con HTML y CSS. Echad un vistazo al ejemplo de su <a href="http://emmet.io/">web</a>, no tiene desperdicio.</p>
+
+						<h3>Sublime Linter</h3>
+						<p>El uso de un linter se hace esencial para escribir código mejor, mas limpio y libre de bugs.</p>
+						<p>Los linters no estan incluidos en el paquete así que tendremos que instalar los que queramos. En concreto suelo usar:</p>
+						<ul>
+							<li>Jshint</li>
+							<li>Csslint</li>
+						</ul>
+
+						<h3>Project Manager</h3>
+						<p>Muy cómodo para ordenar y manejar proyectos olvidandonos de donde están los ficheros. Es una mejora a la funcionalidad que trae Sublime por defecto.</p>
+
+						<h3>DocBlockr</h3>
+						<p>Ayuda mucho a la hora de comentar nuestro código al estilo <a href="http://usejsdoc.org/">JSDoc</a>. Completando todo lo posible a partir de la función que comentemos.</p>
+
+						<h3>GitGutter</h3>
+						<p>Como su nombre indica nos muestra en el gutter si la linea ha sido insertada, modificada o eliminada desde el último commit.</p>
+
+						<h3>BracketHighlighter</h3>
+						<p>Para esos momentos que tenemos que tocar algo "spagueti code" o no tanto.</p>
+						<p>Resalta la apertura y cierre de etiquetas, comillas, paréntesis, llaves, corchetes...</p>
+						<p>Podemos mostrar los incadores en el código, en el gutter o en ambos, además podemos aplicarles distintos estilos.</p>
+
+						<h3>Color Highlighter</h3>
+						<p>Nos enseña una vista previa del color que señalemos. Soporta todos los formatos de color de CSS y variables de preprocesadores como Less, Sass/SCSS, Stylus.</p>
+
+						<h3>ColorPicker</h3>
+						Muestra el selector de colores del sistema.
+
+						<h3>Otros paquetes que uso:</h3>
+						<p>Dotfiles Syntax Highlighting, jQuery, Handlebars, SCSS, Meteor Snippets, Dayle Rees Color Schemes...</p>
+
+						<h2>Configuración</h2>
+						<p>La configuración de Sublime Text se basa en ficheros JSON, podeís verla en <code>Preferences → Settings - Default</code> y los atajos de teclado en <code>Preferences → Keybindings - Default</code>.</p>
+						<p>Para añadir o sobreescribir los valores hemos de editar los ficheros que terminan por <code>* - User</code>.</p>
+						<p>Settings - User:</p>
+						<pre><code class="js">{<br>	// Resalta la linea donde tenemos el cursor<br>	"highlight_line": true,<br>	// Añade una linea en blanco al final del documento<br>	"ensure_newline_at_eof_on_save": true,<br>	// Eliminar espacios al final de linea al guardar<br>	"trim_trailing_white_space_on_save": true,<br>	// Separadores de palabras modificados para CSS<br>	"word_separators": "./\\()\"':,.;&lt;&gt;~!@#$%^&*|+=[]{}`~?"<br>	// Permite hacer scroll aunque se haya terminado el documento<br>	"scroll_past_end": true<br>} </code></pre>
+						<p>Keybindings - User:</p>
+						<pre><code class="js">[<br>	// Indenta todo el documento<br>	{ "keys": ["super+shift+r"], "command": "reindent", "args": {"single_line": false} },<br>	// Intercambia los keybindings de "pegar" y "pegar e indentar"<br>	{ "keys": ["super+v"], "command": "paste_and_indent" },<br>	{ "keys": ["super+shift+v"], "command": "paste" },<br>	// Resaltar el fichero actual en el sidebar<br>	{ "keys": ["alt+shift+r"], "command": "reveal_in_side_bar" }<br>]</code></pre>
+					</div>
+				</div>
+				<div class="special">
+					<div class="row">
+						<div class="adjust">
+							<h2>Sincronización</h2>
+							<p>Si sois usuarios de Dropbox (u otro servicio similar) podeís sincronizar todas vuestras preferencias y ahorraros mucho trabajo para estar cómodos cada vez que cambieis de equipo o sistema operativo.</p>
+							<p>Si vuestro Dropbox no está en la ubicación por defecto, debereís sustituir <code>~/Dropbox</code> por vuestra ubicación.</p>
+							<p>Cerrad Sublime Text y abrid la Terminal.</p>
+
+							<p>Las siguientes instrucciones son para OS X, para otro sistema operativo podeís verlas <a href="https://sublime.wbond.net/docs/syncing">aquí</a>.</p>
+
+							<p>En vuestra primera máquina:</p>
+							<pre><code class="sh">cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/<br>mkdir ~/Dropbox/Sublime<br>mv User ~/Dropbox/Sublime/<br>ln -s ~/Dropbox/Sublime/User</code></pre>
+
+							<p>En vuestras otras máquinas (eliminará la carpeta User y todo su contenido):</p>
+							<pre><code class="sh">cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/<br>rm -r User<br>ln -s ~/Dropbox/Sublime/User</code></pre>
+							<p>Nota: los keybindings son específicos de cada sistema operativo, la primera vez que usemos uno distinto tendremos que definirlos.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</div>
+</template>
