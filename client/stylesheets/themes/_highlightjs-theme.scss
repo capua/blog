@@ -1,13 +1,12 @@
-// Daylerees mellow-contrast.css
 .hljs {
   display: block; padding: 0.5em;
-  background: #0b0a09; color: #F8F8F2;
+  background: #F5F8FC; color: #879BB0;
 }
 
 .hljs-comment,
 .hljs-template_comment,
 .hljs-javadoc {
-  color: #7A7267;
+  color: #bbbbbb;
 }
 
 .hljs-keyword,
@@ -15,14 +14,14 @@
 .hljs-request,
 .hljs-status,
 .nginx .hljs-title {
-  color: #F2BC79;
+  color: #808C9C;
 }
 
 .hljs-function .hljs-keyword,
 .hljs-sub .hljs-keyword,
 .method,
 .hljs-list .hljs-title {
-  color: #F28972;
+  color: #E3BD14;
 }
 
 .hljs-string,
@@ -34,7 +33,7 @@
 .hljs-date,
 .tex .hljs-command,
 .coffeescript .hljs-attribute {
-  color: #F8BB39;
+  color: #E3BD14;
 }
 
 .hljs-subst {
@@ -54,38 +53,38 @@
 .hljs-shebang,
 .hljs-prompt,
 .hljs-literal {
-  color: #1F8181;
+  color: #355B8C;
 }
 
 .hljs-symbol,
 .ruby .hljs-symbol .hljs-string,
 .hljs-number {
-  color: #F8BB39;
+  color: #DE4D3A;
 }
 
 .hljs-params,
 .hljs-variable,
 .clojure .hljs-attribute {
-  color: #F2BC79;
+  color: #A8C0E0;
 }
 
 .css .hljs-tag,
 .hljs-rules .hljs-property,
 .hljs-pseudo,
 .tex .hljs-special {
-  color: #1F8181;
+  color: #355B8C;
 }
 
 .css .hljs-class {
-  color: #F2BC79;
+  color: #A8C0E0;
 }
 
 .hljs-rules .hljs-keyword {
-  color: #F2BC79;
+  color: #A8C0E0;
 }
 
 .hljs-rules .hljs-value {
-  color: #1F8181;
+  color: #355B8C;
 }
 
 .css .hljs-id {

@@ -1,3 +1,9 @@
-code {
+.shortcut, code {
 	white-space: nowrap;
+}
+
+pre {
+	code {
+		white-space: inherit;
+	}
 }
